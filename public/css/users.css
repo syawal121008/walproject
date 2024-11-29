@@ -1,0 +1,165 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kontainer */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Form Input */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+input.form-control, textarea.form-control, select.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input.form-control:focus {
+    border-color: #007bff;
+}
+
+/* Role Options */
+.role-options {
+    margin-top: 20px;
+}
+
+.role-options label {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Tombol Save */
+button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+}
+
+.input-group-text {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+.input-group-text:hover {
+    color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input.form-control {
+        font-size: 13px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+.role-options {
+    margin-top: 20px;
+}
+
+.role-options label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+}
+
+.role-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.role-label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.role-label input[type="radio"] {
+    margin-right: 5px;
+}
+
+.role-label:hover {
+    background-color: #f0f0f0;
+    border-color: #007bff;
+}
+
+.role-label input[type="radio"]:checked + span {
+    background-color: #007bff;
+    color: white;
+}

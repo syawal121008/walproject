@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Kontainer */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header H3 */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Garis bawah terakhir dihilangkan */
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Warna baris genap dan efek hover */
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Tombol dalam tabel */
+table td .btn {
+    margin-right: 5px;
+}
+
+/* Form dalam tombol hapus agar tidak terlalu besar */
+form {
+    display: inline-block;
+}
+
+/* Menyesuaikan ukuran tombol kecil */
+.btn-sm {
+    padding: 6px 10px;
+    font-size: 12px;
+}
+/* Kontainer form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul Form */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Label */
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input Field */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Radio Button */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Textarea */
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Tombol Submit */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling - Responsive */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
